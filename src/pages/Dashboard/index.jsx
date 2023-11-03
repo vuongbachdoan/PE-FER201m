@@ -84,7 +84,7 @@ export const Dashboard = () => {
                 startIcon={<AddIcon />}
                 variant='contained' style={{
                     padding: 10,
-                    borderRadius: 10,
+                    borderRadius: 15,
                     minWidth: 100,
                     marginBottom: 30,
                     backgroundColor: '#0A0A0A'

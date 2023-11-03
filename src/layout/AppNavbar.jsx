@@ -79,10 +79,22 @@ export const AppNavbar = () => {
                             sx={{
                                 display: { xs: 'block', md: 'none' },
                             }}
+                            PaperProps={{
+                                style: {
+                                    padding: '10px',
+                                    borderRadius: '20px',
+                                    minWidth: '150px'
+                                }
+                            }}
+
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Link to={page.path}><Typography textAlign="center">{page.name}</Typography></Link>
+                                <MenuItem
+                                    style={{
+                                        borderRadius: '10px'
+                                    }}
+                                    key={page} onClick={handleCloseNavMenu}>
+                                    <Link to={page.path} style={{ textDecoration: 'none', color: '#0A0A0A' }}><Typography textAlign="center">{page.name}</Typography></Link>
                                 </MenuItem>
                             ))}
                         </Menu>

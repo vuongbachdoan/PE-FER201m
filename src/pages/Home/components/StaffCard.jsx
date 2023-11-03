@@ -46,10 +46,12 @@ export const StaffCard = ({data}) => {
           paddingRight: 20,
         }}
       >
-        <Button variant='outlined' style={{
+        <Button variant='contained' style={{
           padding: 10,
-          borderRadius: 10,
-          minWidth: 100
+          borderRadius: 15,
+          minWidth: 100,
+          backgroundColor: '#0A0A0A',
+          boxShadow: 'none',
         }} onClick={() => handleViewDetail(data?.id)} size="small" color="primary">
           Detail
         </Button>
